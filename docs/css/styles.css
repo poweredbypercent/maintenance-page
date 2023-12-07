@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'MarkPro';
+  src: local('MarkPro'), url('../fonts/MarkPro.ttf') format('truetype');
+}
+
+body {
+  text-align: center;
+  margin: 0px;
+  font-family: 'MarkPro', sans-serif;
+  font-weight: normal;
+}
+
+#outer-layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+div#inner-layout {
+  color: #2f333d;
+  margin: 0 auto;
+  min-width: 300px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+div#inner-layout h1 {
+  color: #070c18;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+div#inner-layout p {
+  font-size: 16px;
+  color: #2f333d;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+a {
+  color: #6a6d74;
+  text-decoration: none;
+}
+
+#maintenance_frame {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+footer p {
+  color: #6a6d74 !important;
+  margin: 18px 0;
+  font-size: 12px !important;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  display: inline-block;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #e1e2e3;
+  padding: 0;
+}
+
+#percent-logo {
+  margin-bottom: -1px;
+}
+
+span {
+  font-weight: 600;
+}
+
+@media (min-width: 600px) {
+  div#inner-layout {
+    margin: 0 auto;
+    margin-top: 10vh;
+    width: auto;
+    padding: 10px 80px;
+    border-radius: 8px;
+    box-shadow: 0px 40px 72px rgba(7, 12, 24, 0.08);
+  }
+}
+
+@media (min-width: 800px) {
+  div#inner-layout {
+    width: 560px;
+  }
+}
