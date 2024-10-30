@@ -1,12 +1,9 @@
-@font-face {
-  font-family: 'MarkPro';
-  src: local('MarkPro'), url('../fonts/MarkPro.ttf') format('truetype');
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 body {
   text-align: center;
   margin: 0px;
-  font-family: 'MarkPro', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: normal;
 }
 
@@ -55,13 +52,29 @@ a {
   margin: 0 auto;
 }
 
-footer p {
+footer > * {
   color: #6a6d74 !important;
   margin: 18px 0;
   font-size: 12px !important;
   font-weight: 600;
   letter-spacing: 0.3px;
   display: inline-block;
+}
+
+#footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#logo-wrapper img {
+  width: 91px;
 }
 
 hr {
